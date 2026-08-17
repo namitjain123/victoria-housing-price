@@ -1,0 +1,21 @@
+# General
+.DS_Store
+*.pyc
+__pycache__/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+venv/
+env/
+.env
+
+# Excel
+~$*
+
+# OS
+Thumbs.db
