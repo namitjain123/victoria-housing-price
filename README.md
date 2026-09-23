@@ -1,80 +1,57 @@
-# Victoria Housing Price Analysis
+# 🏠 Victoria Housing Price Analysis
 
-A comprehensive Power BI analysis of Victorian property market trends from 2004 to 2025, tracking housing prices across different council regions and property types.
+An interactive Power BI dashboard analysing Victorian property prices from 2004 to 2025, comparing price growth across council areas, regions (Metropolitan vs Regional Victoria) and property types.
 
-## 📊 Project Overview
+## 📊 Dashboard Preview
 
-This project analyzes historical housing price data across Victoria, Australia, providing insights into:
-- **Price Trends**: Median and mean property prices by council area and year
-- **Market Growth**: Year-over-year price growth analysis
-- **Regional Comparisons**: Housing market performance across different Victorian regions
-- **Long-term Index**: Price indices based on 2004 as the baseline year
+### Market Overview
+![Market Overview](sheet1.png)
 
-## 📁 Files
+### Price Trends & Growth
+![Price Trends](sheet2.png)
 
-| File | Description |
-|------|-------------|
-| `melbourne_council_property.csv` | Main dataset containing property sales and pricing metrics (2004-2025) |
-| `victoria_council_property_2004_2025.xlsx` | Extended Excel file with additional worksheets |
-| `sheet 1.png` - `sheet3.png` | Power BI dashboard previews/screenshots |
+### Council-Level Insights
+![Council Insights](sheet3.png)
 
-## 📈 Dataset Structure
+## 📄 Report Pages
 
-### Columns in `melbourne_council_property.csv`
+1. **Market Overview:** KPI summary and regional comparisons.
+2. **Price Trends & Growth:** Median prices and year-over-year growth over time.
+3. **Council-Level Insights:** Detailed comparison of individual council areas.
+
+## 🗂️ Data Model
 
 | Column | Description |
-|--------|-------------|
-| **Council** | Local council area in Victoria |
-| **Region** | Regional classification (Metropolitan/Regional Victoria) |
-| **Year** | Calendar year (2004-2025) |
-| **PropertyType** | Type of property (e.g., House, Unit, etc.) |
-| **NumSales** | Number of property sales recorded |
-| **MedianPrice** | Median sale price for the period |
-| **MeanPrice** | Average sale price for the period |
-| **YoY_Median_Growth_Pct** | Year-over-year percentage change in median price |
-| **Median_Index_2004base** | Price index with 2004 as base year (100) |
-| **IsAggregate** | Boolean flag for aggregated data |
-| **IsPreliminary** | Boolean flag for preliminary/incomplete data |
+|---|---|
+| Council | Local council area in Victoria |
+| Region | Metropolitan or Regional Victoria |
+| Year | Calendar year (2004–2025) |
+| PropertyType | House, Unit, etc. |
+| NumSales | Number of property sales |
+| MedianPrice | Median sale price |
+| MeanPrice | Average sale price |
+| YoY_Median_Growth_Pct | Year-over-year % change in median price |
+| Median_Index_2004base | Price index (2004 = 100) |
+| IsAggregate | Flag for aggregated rows |
+| IsPreliminary | Flag for preliminary data (2025 figures may be revised) |
 
-## 🔍 Key Insights
+## 🛠️ Tools Used
 
-- Data spans **21 years** (2004-2025), capturing multiple housing market cycles
-- Covers all Victorian councils across **Metropolitan** and **Regional Victoria**
-- Includes both median and mean price metrics for comprehensive analysis
-- Year-over-year growth rates enable trend analysis and market volatility assessment
-- Index values allow easy tracking of long-term property value appreciation
+- **Power BI Desktop:** data modelling, DAX measures and report design
+- **Excel / CSV:** source data
 
-## 📊 Power BI Dashboards
+## 📁 Repository Contents
 
-The project includes Power BI visualizations (see screenshots):
-- **Sheet 1**: Overall market overview and regional comparisons
-- **Sheet 2**: Price trends and growth analysis
-- **Sheet 3**: Detailed council-level insights
+| File | Description |
+|---|---|
+| melbourne_council_property.csv | Main dataset (2004–2025) |
+| victoria_council_property_2004_2025.xlsx | Excel version with additional worksheets |
+| sheet1.png – sheet3.png | Dashboard screenshots |
 
 ## 🚀 How to Use
 
-1. **Explore the Data**: Open the CSV or XLSX file in Excel or Power BI
-2. **View Dashboards**: Check the PNG previews for visualization examples
-3. **Analyze Trends**: Filter by region, council, or property type
-4. **Track Growth**: Use YoY growth percentages to identify trending markets
-5. **Compare Markets**: Use index values to compare long-term appreciation
+1. Clone or download this repository.
+2. Open the dataset in Power BI Desktop or Excel.
+3. Filter by region, council or property type to explore trends.
 
-## 💡 Analysis Applications
-
-- Market trend forecasting
-- Investment opportunity identification
-- Regional economic indicators
-- Property valuation benchmarking
-- Real estate portfolio analysis
-
-## 📝 Notes
-
-- Some entries marked as `IsPreliminary=TRUE` may be updated with final data
-- Aggregate data entries include combined metrics across multiple property types/categories
-- Price data reflects actual sales transactions in each council area
-
----
-
-**Data Source**: Victorian council property sales records (2004-2025)  
-**Last Updated**: 2026  
-**Format**: CSV, XLSX, Power BI Dashboard
+**Data source:** [e.g. Victorian Valuer-General, Victorian Property Sales Report]
